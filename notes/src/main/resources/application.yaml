@@ -1,0 +1,28 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+spring:
+  application:
+    name: notes
+
+  security:
+    user:
+      name: admin
+      password: password
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/securenotes
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect=org.hibernate.dialect.MySQLDialect
+
+
+
